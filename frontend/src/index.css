@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="number"],
+input[type="tel"] {
+  @apply border py-2 px-3 rounded-2xl outline-none focus:border-gray-500;
+}
+
+button.primary {
+  @apply bg-primary rounded-2xl text-white py-2 px-3 cursor-pointer;
+}
+
+svg.iconPassword {
+  @apply w-5 h-5 absolute right-3 top-1/2 -translate-y-1/2 cursor-pointer z-50;
+}
+a.accountLink {
+  @apply py-2 px-4 flex items-center gap-1 bg-gray-200 rounded-full;
+}
+a.accountLink.active {
+  @apply bg-primary  text-white;
+}
